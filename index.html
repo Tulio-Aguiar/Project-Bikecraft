@@ -8,10 +8,22 @@
       name="description"
       content="Bicicletas elétricas de alta precisão e qualidade,  feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft."
     />
-    
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
     <link rel="preload" href="assets/css/style.css" as="style">
     <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
+
+    <script>document.documentElement.classList.add('js');</script>
+    
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  
+</head>
+
   <body>
     <header class="header-bg">
       <div class="header container">
@@ -30,16 +42,16 @@
     <main class="introducao-bg">
       <div class="introducao container">
         <div class="introducao-conteudo">
-          <h1 class="font-1-xxl cor-0">
+          <h1 class="font-1-xxl cor-0 fadeInDown" data-anime="200">
             Bicicletas feitas sob medida<span class="cor-p1">.</span>
           </h1>
-          <p class="font-2-l cor-5">
+          <p class="font-2-l cor-5 fadeInRight" data-anime="450" >
             Bicicletas elétricas de alta precisão e qualidade, feitas sob medida
             para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
-          <a class="botao" href="./bicicletas.html">Escolha a sua <span class="cor-p1">.</span></a>
+          <a class="botao fadeInLeft" href="assets/html/bicicletas.html" data-anime="600">Escolha a sua <span class="cor-p1">.</span></a>
         </div>
 
-        <picture>
+        <picture class="fadeInUp" data-anime="800">
           <source media="(max-width:800px)" srcset="assets/img/bicicletas/nimbus.jpg">
           <img src="assets/img/fotos/introducao.jpg" alt="Bicicleta elétrica preta."/>
         </picture>
@@ -220,5 +232,8 @@
        <p class="footer-copy cor-6 font-2-m">Bikecraft &copy; Alguns direitos reservados.</p>
      </div>
     </footer>
+
+  <script src="assets/js/plugins/simple-anime.js"></script>
+  <script src="assets/js/main.js"></script>
   </body>
 </html>
